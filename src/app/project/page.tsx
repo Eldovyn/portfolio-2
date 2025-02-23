@@ -22,6 +22,7 @@ import { GoLinkExternal } from "react-icons/go";
 import { VscGithubAlt } from "react-icons/vsc";
 import FideaProject from '@/../public/fidea.jpeg'
 import JobEntry from '@/../public/job-entry.png'
+import NextJS from '@/../public/nextjs.png'
 
 const projects = [
     {
@@ -36,7 +37,7 @@ const projects = [
         title: "Fidea E-Commerce",
         description: "This project is an e-commerce platform developed as a college assignment from the lecturer in a second-semester course.",
         image: FideaProject,
-        technologies: [Python, SQL, TypeSript, Flask, ReactJS, PostgresSQL, TailwindCSS],
+        technologies: [Python, SQL, TypeSript, Flask, PostgresSQL, ReactJS, TailwindCSS],
         githubLink: "https://github.com/Fidea-Ecommerce",
         externalLink: "https://github.com/Fidea-Ecommerce"
     },
@@ -44,7 +45,7 @@ const projects = [
         title: "Job Entry",
         description: "This project was created for the recruitment of programmers in the psychology laboratory. The website is designed to facilitate the recruitment process with features for registration and the ability to export user data.",
         image: JobEntry,
-        technologies: [Python, SQL, TypeSript, Flask, ReactJS, PostgresSQL, TailwindCSS],
+        technologies: [Python, SQL, TypeSript, Flask, PostgresSQL, ReactJS, NextJS, TailwindCSS],
         githubLink: "https://github.com/Eldovyn/job-entry-web",
         externalLink: "https://github.com/Eldovyn/job-entry-web"
     },
