@@ -4,6 +4,7 @@ import Image from "next/image";
 import Github from '@/../public/github.png'
 import type { CustomFlowbiteTheme } from "flowbite-react";
 import { Flowbite } from "flowbite-react";
+import { usePathname } from "next/navigation";
 
 const customTheme: CustomFlowbiteTheme = {
     navbar: {
@@ -19,6 +20,8 @@ const customTheme: CustomFlowbiteTheme = {
 
 
 const NavbarComponent = () => {
+    const pathname = usePathname();
+
     return (
         <Flowbite theme={{ theme: customTheme }}>
             <Navbar fluid className="bg-[#12141e] sticky top-0 w-full z-50">
@@ -30,13 +33,11 @@ const NavbarComponent = () => {
                     <NavbarToggle />
                 </div>
                 <Navbar.Collapse>
-                    <Navbar.Link href="#">
+                    <Navbar.Link href="/" active={pathname === "/" ? true : false}>
                         Home
                     </Navbar.Link>
-                    <Navbar.Link href="#">About</Navbar.Link>
-                    <Navbar.Link href="#">Project</Navbar.Link>
-                    <Navbar.Link href="#">Certificate</Navbar.Link>
-                    <Navbar.Link href="#">Contact</Navbar.Link>
+                    <Navbar.Link href="/about" active={pathname === "/about" ? true : false}>About</Navbar.Link>
+                    <Navbar.Link href="/project" active={pathname === "/project" ? true : false}>Project</Navbar.Link>
                 </Navbar.Collapse>
             </Navbar>
         </Flowbite>
