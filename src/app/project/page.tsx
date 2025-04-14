@@ -56,7 +56,7 @@ const ProjectPage = () => {
         <>
             <NavbarComponent />
             <div className="h-screen bg-[#12141e] p-4">
-                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-[65%] mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-[65%] mx-auto mt-10">
                     {projects.map((project, index) => (
                         <Card key={index} className="border-[#64748B] bg-[#12141e] border-2">
                             <CardHeader>

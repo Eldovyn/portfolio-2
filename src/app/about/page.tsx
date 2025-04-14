@@ -25,6 +25,8 @@ import Flask from '@/../public/flask.png'
 import FastAPI from '@/../public/fastapi.png'
 import Postman from '@/../public/postman.png'
 import Heroku from '@/../public/heroku.png'
+import Redis from '@/../public/redis.webp'
+import Gcp from '@/../public/gcp.png'
 
 const AboutPage = () => {
     return (
@@ -39,7 +41,7 @@ const AboutPage = () => {
                     <div className="flex xl:flex-row flex-col justify-center items-center mt-4">
                         <Image src={Avatar} alt="avatar" className="w-[300px] md:w-[500px] text-white bg-transparent" />
                         <div className="flex flex-col text-[#FFFFFF] mt-4 md:mt-0 md:ms-4">
-                            <p>I am currently pursuing a Bachelor's degree in Informatics. I have a passion for coding and am particularly interested in the field of software engineering. My interest in coding began when I started cheating in a game using the Lua programming language. From there, I became fascinated by coding and decided to explore it further.</p>
+                            <p>I am an active student at Gunadarma University with a strong interest and passion in Software Engineering, particularly as a Web Developer. With over a year of experience in building modern websites, I have developed skills in both frontend and backend development. In addition, I also have experience in bot development, which has further broadened my understanding of building efficient and integrated systems.</p>
                         </div>
                     </div>
                 </div>
@@ -60,6 +62,8 @@ const AboutPage = () => {
                             { src: SQL, alt: "sql", text: "SQL" },
                             { src: Postgre, alt: "postgre", text: "PostgreSQL" },
                             { src: MongoDB, alt: "mongodb", text: "MongoDB" },
+                            { src: Redis , alt: "redis", text: "Redis" },
+                            { src: Gcp, alt: "gcp", text: "GCP" },
                             { src: Flask, alt: "Flask", text: "Flask" },
                             { src: FastAPI, alt: "FastAPI", text: "FastAPI" },
                             { src: ReactIcon, alt: "react", text: "React" },
