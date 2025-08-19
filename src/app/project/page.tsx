@@ -9,13 +9,10 @@ import {
 } from "@/components/ui/card"
 import AutoStore from '@/../public/auto-store.png'
 import MongoDB from '@/../public/mongodb.png'
-import Python from '@/../public/python.png'
+import Redis from '@/../public/550460-removebg-preview.png'
 import Nextcord from '@/../public/nextcord.png'
 import PostgresSQL from '@/../public/postgre.png'
 import Flask from '@/../public/flask.png'
-import ReactJS from '@/../public/react.png'
-import TypeSript from '@/../public/typescript.png'
-import SQL from '@/../public/sql.png'
 import TailwindCSS from '@/../public/tailwind.png'
 import Image from "next/image"
 import { GoLinkExternal } from "react-icons/go";
@@ -23,13 +20,15 @@ import { VscGithubAlt } from "react-icons/vsc";
 import FideaProject from '@/../public/fidea.jpeg'
 import JobEntry from '@/../public/job-entry.png'
 import NextJS from '@/../public/nextjs.png'
+import Sludgify from '@/../public/sludgify.png'
+import Cloudinary from '@/../public/images-removebg-preview.png'
 
 const projects = [
     {
         title: "Bot Discord Auto Store",
         description: "This project is a Discord bot auto-store designed for automated selling in Discord servers. It supports multiple payment methods such as Saweria, Trakteer, and Sociabuzz, as well as in-game currency from Growtopia. Additionally, it features an auto-balance system to handle transactions seamlessly.",
         image: AutoStore,
-        technologies: [Python, MongoDB, Nextcord],
+        technologies: [MongoDB, Nextcord],
         githubLink: "",
         externalLink: "https://discord.gg/H4SB4Cq63G"
     },
@@ -37,7 +36,7 @@ const projects = [
         title: "Fidea E-Commerce",
         description: "This project is an e-commerce platform developed as a college assignment from the lecturer in a second-semester course.",
         image: FideaProject,
-        technologies: [Python, SQL, TypeSript, Flask, PostgresSQL, ReactJS, TailwindCSS],
+        technologies: [Flask, PostgresSQL, TailwindCSS],
         githubLink: "https://github.com/Fidea-Ecommerce",
         externalLink: "https://github.com/Fidea-Ecommerce"
     },
@@ -45,9 +44,17 @@ const projects = [
         title: "Job Entry",
         description: "This project was created for the recruitment of programmers in the psychology laboratory. The website is designed to facilitate the recruitment process with features for registration and the ability to export user data.",
         image: JobEntry,
-        technologies: [Python, SQL, TypeSript, Flask, PostgresSQL, ReactJS, NextJS, TailwindCSS],
+        technologies: [Flask, PostgresSQL, NextJS, TailwindCSS],
         githubLink: "https://github.com/Eldovyn/job-entry-web",
         externalLink: "https://github.com/Eldovyn/job-entry-web"
+    },
+    {
+        title: "Sludgify",
+        description: "This project is a hackathon competition project from Gunadarma Code Week 2025, which is a website for managing sludge, equipped with AI-powered analysis technology and a carbon calculation tool.",
+        image: Sludgify,
+        technologies: [MongoDB, Redis, Cloudinary, Flask, NextJS, TailwindCSS],
+        githubLink: "https://github.com/sludgify/sludgify-web",
+        externalLink: "https://github.com/sludgify/sludgify-web"
     },
 ];
 
@@ -64,7 +71,7 @@ const ProjectPage = () => {
                                 <CardDescription className="text-[#D1D5DB]">
                                     <div className="flex flex-col">
                                         <p>{project.description}</p>
-                                        <div className="flex flex-row justify-start mt-2 w-full">
+                                        <div className="flex flex-row justify-start mt-2 w-full gap-2">
                                             {project.technologies.map((tech, techIndex) => (
                                                 <Image
                                                     key={techIndex}
