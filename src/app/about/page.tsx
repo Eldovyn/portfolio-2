@@ -49,7 +49,7 @@ const AboutPage = () => {
                     <div className="flex xl:flex-row flex-col justify-center items-center mt-4">
                         <Image src={Avatar} alt="avatar" className="w-[300px] md:w-[500px] text-white bg-transparent" />
                         <div className="flex flex-col text-[#FFFFFF] mt-4 md:mt-0 md:ms-4">
-                            <p>I am an active student at Gunadarma University with a strong interest and passion in Software Engineering, particularly as a Web Developer. With over a year of experience in building modern websites, I have developed skills in both frontend and backend development. In addition, I also have experience in bot development, which has further broadened my understanding of building efficient and integrated systems.</p>
+                            <p>I am someone who is passionate about technology, especially web development. I am currently focusing on the web developer environment and have several skills in this field. I won first place in the GCW 2025 Hackathon and was also a finalist in the competitive programming competition Kompres 15 LabTI. I have completed an internship at Evermos as a backend developer and at Core Initiative as a frontend developer.</p>
                         </div>
                     </div>
                 </div>
