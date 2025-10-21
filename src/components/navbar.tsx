@@ -28,8 +28,12 @@ const NavbarComponent = () => {
                 <Navbar.Brand href="https://flowbite-react.com">
                     <span className="self-center whitespace-nowrap text-xl font-semibold text-[#FFFFFF]">ditttt_frs()</span>
                 </Navbar.Brand>
-                <div className="flex md:order-2">
-                    <Image src={Github} alt="github" className="w-[30px] text-white bg-transparent" />
+                <div className="flex md:order-2 items-center">
+                    <Image
+                        src={Github}
+                        alt="github"
+                        className="w-[23px] h-[23px] sm:w-[20px] sm:h-[20px] md:w-[25px] md:h-[25px] lg:w-[30px] lg:h-[30px] text-white bg-transparent"
+                    />
                     <NavbarToggle />
                 </div>
                 <Navbar.Collapse>
