@@ -19,7 +19,7 @@ export default function Home() {
                 2000,
                 'Backend Developer',
                 2000,
-                'Discord Bot Developer',
+                'Bot Developer',
                 2000
               ]}
               wrapper="span"
@@ -30,10 +30,10 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <Image 
-              src={Avatar} 
-              alt="avatar" 
-              className="w-full max-w-[300px] lg:max-w-[500px] text-white bg-transparent" 
+            <Image
+              src={Avatar}
+              alt="avatar"
+              className="w-full max-w-[300px] lg:max-w-[500px] text-white bg-transparent"
             />
           </div>
         </div>
