@@ -27,6 +27,13 @@ import Postman from '@/../public/postman.png'
 import Heroku from '@/../public/heroku.png'
 import Redis from '@/../public/redis.webp'
 import Gcp from '@/../public/gcp.png'
+import SASS from '@/../public/erasebg-transformed.webp'
+import Php from '@/../public/php.png'
+import MySql from '@/../public/mysql.png'
+import Go from '@/../public/golang_logo_icon_171073.png'
+import VueJS from '@/../public/vuejs.png'
+import NuxtJS from '@/../public/nuxtjs.svg'
+import Codeigniter from '@/../public/ci-logo.png'
 
 const AboutPage = () => {
     return (
@@ -55,19 +62,26 @@ const AboutPage = () => {
                         {[
                             { src: HTML, alt: "html", text: "HTML" },
                             { src: CSS, alt: "css", text: "CSS" },
+                            { src: SASS, alt: "sass", text: "SASS" },
                             { src: JS, alt: "js", text: "JavaScript" },
                             { src: TS, alt: "typescript", text: "TypeScript" },
+                            { src: Go, alt: "go", text: "Go" },
                             { src: Python, alt: "python", text: "Python" },
+                            { src: Php, alt: "php", text: "PHP" },
                             { src: Lua, alt: "lua", text: "Lua" },
                             { src: SQL, alt: "sql", text: "SQL" },
                             { src: Postgre, alt: "postgre", text: "PostgreSQL" },
+                            { src: MySql, alt: "MySQL", text: "MySQL" },
                             { src: MongoDB, alt: "mongodb", text: "MongoDB" },
-                            { src: Redis , alt: "redis", text: "Redis" },
+                            { src: Redis, alt: "redis", text: "Redis" },
                             { src: Gcp, alt: "gcp", text: "GCP" },
                             { src: Flask, alt: "Flask", text: "Flask" },
                             { src: FastAPI, alt: "FastAPI", text: "FastAPI" },
                             { src: ReactIcon, alt: "react", text: "React" },
                             { src: NextJS, alt: "nextjs", text: "NextJS" },
+                            { src: VueJS, alt: "VueJS", text: "VueJS" },
+                            { src: NuxtJS, alt: "NuxtJS", text: "NuxtJS" },
+                            { src: Codeigniter, alt: "Codeigniter", text: "Codeigniter" },
                             { src: TailwindCSS, alt: "tailwindcss", text: "TailwindCSS" },
                             { src: Bootstrap, alt: "bootstrap", text: "Bootstrap" },
                             { src: DiscordPY, alt: "discordpy", text: "Discord.PY" },
