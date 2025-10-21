@@ -34,6 +34,7 @@ import Go from '@/../public/golang_logo_icon_171073.png'
 import VueJS from '@/../public/vuejs.png'
 import NuxtJS from '@/../public/nuxtjs.svg'
 import Codeigniter from '@/../public/ci-logo.png'
+import Linux from '@/../public/linux.png'
 
 const AboutPage = () => {
     return (
@@ -111,6 +112,7 @@ const AboutPage = () => {
                             { src: Docker, alt: "docker", text: "Docker" },
                             { src: Github, alt: "github", text: "Github" },
                             { src: Postman, alt: "postman", text: "postman" },
+                            { src: Linux, alt: "linux", text: "linux" },
                         ].map((item, index) => (
                             <div key={index} className="border-2 border-[#64748B] text-center h-[3.5rem] flex justify-center items-center text-[#FFFFFF] rounded-md">
                                 <div className="flex justify-between items-center w-full ms-3 me-3">
