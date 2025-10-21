@@ -65,29 +65,43 @@ const ProjectPage = () => {
             <div className="h-screen bg-[#12141e] p-4">
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-[65%] mx-auto mt-10">
                     {projects.map((project, index) => (
-                        <Card key={index} className="border-[#64748B] bg-[#12141e] border-2">
-                            <CardHeader>
+                        <Card
+                            key={index}
+                            className="flex flex-col justify-between h-full border-2 border-[#64748B] bg-[#12141e]"
+                        >
+                            <CardHeader className="flex-shrink-0 pb-4 max-h-[160px] overflow-hidden">
                                 <CardTitle className="text-[#FFFFFF]">{project.title}</CardTitle>
                                 <CardDescription className="text-[#D1D5DB]">
                                     <div className="flex flex-col">
-                                        <p>{project.description}</p>
-                                        <div className="flex flex-row justify-start mt-2 w-full gap-2">
+                                        <p className="line-clamp-4 overflow-hidden text-ellipsis">
+                                            {project.description}
+                                        </p>
+
+                                        <div className="flex flex-row justify-start mt-2 w-full gap-2 flex-wrap">
                                             {project.technologies.map((tech, techIndex) => (
                                                 <Image
                                                     key={techIndex}
                                                     src={tech}
                                                     alt="technology"
-                                                    className="w-[20px] text-white bg-transparent me-1"
+                                                    className="w-[20px] h-[20px] text-white bg-transparent me-1"
                                                 />
                                             ))}
                                         </div>
                                     </div>
                                 </CardDescription>
                             </CardHeader>
-                            <CardContent>
-                                <Image src={project.image} alt="project-image" className="w-full rounded-md" />
+
+                            <CardContent className="flex-grow flex items-center justify-center">
+                                <div className="w-full aspect-[16/9] flex items-center justify-center">
+                                    <Image
+                                        src={project.image}
+                                        alt="project-image"
+                                        className="w-full h-full object-cover rounded-md"
+                                    />
+                                </div>
                             </CardContent>
-                            <CardFooter>
+
+                            <CardFooter className="flex-shrink-0 pt-4">
                                 <div className="flex flex-row justify-end w-full">
                                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                                         <VscGithubAlt className="cursor-pointer text-[#D1D5DB]" size={20} />
@@ -99,6 +113,7 @@ const ProjectPage = () => {
                             </CardFooter>
                         </Card>
                     ))}
+
                 </div>
                 <br />
             </div>
