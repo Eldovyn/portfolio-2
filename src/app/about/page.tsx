@@ -51,7 +51,7 @@ const AboutPage = () => {
                     <div className="flex xl:flex-row flex-col justify-center items-center mt-4">
                         <Image src={Avatar} alt="avatar" className="w-[300px] md:w-[500px] text-white bg-transparent" />
                         <div className="flex flex-col text-[#FFFFFF] mt-4 md:mt-0 md:ms-4">
-                            <p>I am someone who is passionate about technology, especially web development. I am currently focusing on the web developer environment and have several skills in this field. I won first place in the GCW 2025 Hackathon and was also a finalist in the competitive programming competition Kompres 15 LabTI. I have completed an internship at Evermos as a backend developer and at Core Initiative as a frontend developer.</p>
+                            <p>I am someone who is passionate about technology, especially web development. I am currently focusing on the web developer environment and have several skills in this field. I won first place in the GCW 2025 Hackathon and was also a finalist in the competitive programming competition Kompres 15 LabTI. Additionally, I was selected as a finalist in the Hackathon CMD USK 2025. I have completed an internship at Evermos as a backend developer and at Core Initiative as a frontend developer.</p>
                         </div>
                     </div>
                 </div>
