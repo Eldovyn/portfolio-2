@@ -35,6 +35,8 @@ import VueJS from '@/../public/vuejs.png'
 import NuxtJS from '@/../public/nuxtjs.svg'
 import Codeigniter from '@/../public/ci-logo.png'
 import Linux from '@/../public/linux.png'
+import Cloudinary from '@/../public/cloudinary.webp'
+import GoFiber from '@/../public/logo.svg'
 
 const AboutPage = () => {
     return (
@@ -75,14 +77,16 @@ const AboutPage = () => {
                             { src: MySql, alt: "MySQL", text: "MySQL" },
                             { src: MongoDB, alt: "mongodb", text: "MongoDB" },
                             { src: Redis, alt: "redis", text: "Redis" },
+                            { src: Cloudinary, alt: "redis", text: "Cloudinary" },
                             { src: Gcp, alt: "gcp", text: "GCP" },
                             { src: Flask, alt: "Flask", text: "Flask" },
                             { src: FastAPI, alt: "FastAPI", text: "FastAPI" },
+                            { src: Codeigniter, alt: "Codeigniter", text: "Codeigniter" },
+                            { src: GoFiber, alt: "Go Fiber", text: "Go Fiber" },
                             { src: ReactIcon, alt: "react", text: "React" },
                             { src: NextJS, alt: "nextjs", text: "NextJS" },
                             { src: VueJS, alt: "VueJS", text: "VueJS" },
                             { src: NuxtJS, alt: "NuxtJS", text: "NuxtJS" },
-                            { src: Codeigniter, alt: "Codeigniter", text: "Codeigniter" },
                             { src: TailwindCSS, alt: "tailwindcss", text: "TailwindCSS" },
                             { src: Bootstrap, alt: "bootstrap", text: "Bootstrap" },
                             { src: DiscordPY, alt: "discordpy", text: "Discord.PY" },
